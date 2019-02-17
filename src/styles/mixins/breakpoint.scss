@@ -1,0 +1,35 @@
+@mixin bp($point) {
+  @if $point == phone {
+    @media all and (max-width: 767px) {
+      @content;
+    }
+  } @else if $point == phoneUp {
+    @media all {
+      @content;
+    }
+  } @else if $point == tablet {
+    @media all and (min-width: 768px) and (max-width: 1023px) {
+      @content;
+    }
+  } @else if $point == tabletUp {
+    @media all and (min-width: 768px) {
+      @content;
+    }
+  } @else if $point == desktop {
+    @media all and (min-width: 1024px) and (max-width: 1439px) {
+      @content;
+    }
+  } @else if $point == desktopUp {
+    @media all and (min-width: 1024px) {
+      @content;
+    }
+  } @else if $point == hdesktop {
+    @media all and (min-width: 1440px) {
+      @content;
+    }
+  } @else if $point == hdesktopUp {
+    @media all and (min-width: 1440px) {
+      @content;
+    }
+  }
+}

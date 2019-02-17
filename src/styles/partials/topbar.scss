@@ -1,0 +1,104 @@
+.Topbar {
+  @include set-pal;
+  align-items: center;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  left: 0;
+  position: fixed;
+  right: 0;
+  top: 0;
+  transition: background $time-m, box-shadow $time-m, padding $time-m;
+  z-index: 3;
+  .logo--white {
+    display: none;
+  }
+  &.theme--dark {
+    background: transparent;
+    .logo--dark {
+      display: none;
+    }
+    .logo--white {
+      display: inline-block;
+    }
+  }
+  &.Topbar--stick {
+    @include set-pvm;
+    background: white;
+    box-shadow: 0 3px 5px rgba(0, 0, 0, 0.1);
+    .logo--dark {
+      display: inline-block;
+    }
+    .logo--white {
+      display: none;
+    }
+  }
+}
+
+.TopbarPush {
+  @include set-height-h;
+  @include set-mth;
+  display: block;
+}
+
+.TopbarHd {
+  flex: 1 1 10%;
+}
+.TopbarBd {
+  flex: 1 1 80%;
+  text-align: center;
+}
+.TopbarFt {
+  flex: 1 1 10%;
+  text-align: right;
+}
+
+.TopbarNav {
+  @include bp("phone") {
+    display: none;
+  }
+  @include bp("tablet") {
+    display: none;
+  }
+  @include bp("desktop") {
+    display: none;
+  }
+}
+
+.TopbarBrandmark {
+  img {
+    @include set-height-l;
+  }
+  .TopbarHd & {
+    @include bp("phone") {
+      display: none;
+    }
+    @include bp("tablet") {
+      display: none;
+    }
+    @include bp("desktop") {
+      display: none;
+    }
+  }
+  .TopbarBd & {
+    @include bp("hdesktopUp") {
+      display: none;
+    }
+  }
+}
+
+.TopbarMenu {
+  display: inline-flex;
+}
+
+.TopbarMenuItem {
+  @include set-mhm;
+}
+
+.TopbarModalToggle {
+  @include set-type-m;
+  line-height: 1em;
+  @include bp("hdesktopUp") {
+    display: none !important;
+  }
+}

@@ -1,0 +1,31 @@
+title: Autor
+
+files: true
+
+pages: false
+
+options:
+  preview: false
+  status: false
+  template: false
+  url: false
+  delete: false
+
+fields:
+  title:
+    label: Imię/nazwa
+    required: true
+    type: title
+    width: 1/2
+    translate: false
+
+  picture:
+    label: Zdjęcie
+    required: true
+    type: image
+    width: 1/2
+
+  bio:
+    label: Biografia
+    required: true
+    type: textarea

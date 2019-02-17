@@ -1,0 +1,13 @@
+title: Autorzy
+
+files: false
+
+pages:
+  template: author
+
+options:
+  delete: false
+  status: false
+  preview: false
+  template: false
+  url: false

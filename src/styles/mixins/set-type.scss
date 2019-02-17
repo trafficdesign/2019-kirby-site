@@ -1,0 +1,22 @@
+@import "./ofMixins/interpolate.scss";
+
+@mixin set-type-h {
+  @include interpolate(font-size, nth($fsize-h, 1), nth($fsize-h, 2));
+  line-height: $leading-s;
+}
+@mixin set-type-l {
+  @include interpolate(font-size, nth($fsize-l, 1), nth($fsize-l, 2));
+  line-height: $leading-m;
+}
+@mixin set-type-m {
+  @include interpolate(font-size, nth($fsize-m, 1), nth($fsize-m, 2));
+  line-height: $leading-l;
+}
+@mixin set-type-s {
+  @include interpolate(font-size, nth($fsize-s, 1), nth($fsize-s, 2));
+  line-height: $leading-l;
+}
+@mixin set-type-x {
+  @include interpolate(font-size, nth($fsize-x, 1), nth($fsize-x, 2));
+  line-height: $leading-l;
+}

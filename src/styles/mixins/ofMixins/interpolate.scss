@@ -1,0 +1,30 @@
+@mixin interpolate($properties, $min-value, $max-value) {
+  & {
+    @each $property in $properties {
+      #{$property}: $min-value;
+    }
+
+    @media screen and (min-width: 320px) {
+      @each $property in $properties {
+        #{$property}: calc-interpolation($min-value, $max-value);
+      }
+    }
+
+    @media screen and (min-width: 1366px) {
+      @each $property in $properties {
+        #{$property}: $max-value;
+      }
+    }
+  }
+}
+
+@function calc-interpolation($min-value, $max-value) {
+  $a: ($max-value - $min-value) / (1366px - 320px);
+  $b: $min-value - $a * 320px;
+  $sign: "+";
+  @if ($b < 0) {
+    $sign: "-";
+    $b: abs($b);
+  }
+  @return calc(#{$a * 100}vw #{$sign} #{$b});
+}

@@ -1,0 +1,36 @@
+title: Projekt
+
+pages: false
+
+fields:
+  title:
+    label: Tytuł
+    required: true
+    type: title
+
+  coverimage:
+    label: Okładka
+    required: true
+    type: image
+    width: 1/2
+
+  date:
+    default: today
+    format: LL
+    icon: calendar
+    label: Data wdrożenia
+    placeholder: Data wdrożenia…
+    required: true
+    type: date
+    width: 1/2
+    translate: false
+
+  intro:
+    label: Intro
+    required: true
+    type: textarea
+
+  text:
+    label: Tekst
+    required: true
+    type: textarea

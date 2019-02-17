@@ -1,0 +1,61 @@
+.WorkLayout {
+  .WorkDetails {
+    @include set-pal;
+    @include set-type-x;
+    background: $decor-color;
+    color: $mono-color-600;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: $mwidth-s;
+    position: relative;
+    @include bp("tabletUp") {
+      display: flex;
+      flex-direction: row;
+      margin-top: -2.8em;
+      & > * {
+        flex: 0 0 33%;
+      }
+    }
+    @include bp("phone") {
+      & > *:not(:last-child) {
+        @include set-mbm;
+      }
+    }
+    h2 {
+      font-weight: 600;
+      color: $mono-color-600;
+      font-family: $brand-font;
+    }
+  }
+  .Authors {
+    @include set-mtl;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: $mwidth-s;
+    .AuthorsTitle {
+      @include set-mbl;
+      @include set-type-m;
+      color: $mono-color-600;
+      text-align: center;
+    }
+  }
+  .Author {
+    display: flex;
+    &:not(:last-child) {
+      @include set-mbl;
+    }
+  }
+  .AuthorPic {
+    @include set-prm;
+  }
+  .AuthorDetails {
+    @include set-type-x;
+    h3 {
+      font-weight: 600;
+      font-family: $brand-font;
+    }
+  }
+  .Copy + .Gallery {
+    @include set-mtl;
+  }
+}

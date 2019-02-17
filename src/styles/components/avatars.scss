@@ -1,0 +1,10 @@
+.Avatar {
+  @include set-size-l;
+  display: inline-block;
+  overflow: hidden;
+  padding: 1px;
+  position: relative;
+  img {
+    width: 100%;
+  }
+}

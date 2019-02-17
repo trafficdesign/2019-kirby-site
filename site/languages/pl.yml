@@ -1,0 +1,35 @@
+#topbar
+nav-linkto-shop: Sklep
+nav-linkto-media: Media
+change-languge: EN
+
+# pagination
+newer-items: Poprzednie
+older-items: Kolejne
+newer-item: Poprzednie
+older-item: Kolejne
+
+# projects
+read-more: Czytaj więcej…
+
+# cities
+gdansk: Gdańsk
+gdynia: Gdynia
+sopot: Sopot
+warszawa: Warszawa
+
+# works
+projectLabel: W ramach
+locationLabel: Lokalizacja
+partnersLabel: Partnerzy
+allWorks: Wszystko
+aboutAuthor: O autorze
+Bloki: Bloki
+Detale: Detal
+Instalacje: Rzeźby i instalacje
+Murale: Murale
+Szyldy: Szyldy
+
+# takeaway
+aboutUsCta: Dowiedz się więcej
+contactUsCta: Napisz do nas

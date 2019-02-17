@@ -1,0 +1,35 @@
+.Link {
+  background-color: transparent;
+  border-color: transparent;
+  border-style: solid;
+  border-width: 0 0 3px;
+  color: $brand-color;
+  cursor: pointer;
+  display: inline-block;
+  font-family: $brand-font;
+  font-size: inherit;
+  font-weight: 600;
+  outline: none;
+  text-align: left;
+  text-decoration: none;
+  transition: border-color $time-m, color $time-m;
+  &:hover,
+  &:active,
+  &.is-active {
+    border-color: $brand-color;
+  }
+  &.is-inactive {
+    border: none;
+    color: $mono-color-500;
+    cursor: default;
+    opacity: 0.5;
+  }
+  .theme--dark & {
+    color: white;
+    &:hover,
+    &:active,
+    &.is-active {
+      border-color: white;
+    }
+  }
+}

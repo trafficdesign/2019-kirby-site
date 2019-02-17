@@ -1,0 +1,35 @@
+# topbar
+nav-linkto-shop: Shop
+nav-linkto-media: Press
+change-languge: PL
+
+# pagination
+newer-items: Next
+older-items: Previous
+newer-item: Next
+older-item: Previous
+
+# projects
+read-more: Read more…
+
+# cities
+gdansk: Gdańsk
+gdynia: Gdynia
+sopot: Sopot
+warszawa: Warszawa
+
+# works
+projectLabel: Related project
+locationLabel: Place
+partnersLabel: Partners
+allWorks: All
+aboutAuthor: About the author
+Bloki: Blocks
+Detale: Details
+Instalacje: Art installations
+Murale: Murals
+Szyldy: Signboards
+
+# takeaway
+aboutUsCta: Learn more
+contactUsCta: Contact us

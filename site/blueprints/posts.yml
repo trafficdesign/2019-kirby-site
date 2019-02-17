@@ -1,0 +1,21 @@
+title: Blog
+
+files: false
+
+pages:
+  template: post
+
+options:
+  delete: false
+  status: true
+  template: false
+  url: false
+
+fields:
+  title:
+    label: Tytuł
+    type: text
+
+  text:
+    label: Podtytuł
+    type: text

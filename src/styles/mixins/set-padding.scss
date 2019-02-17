@@ -1,0 +1,213 @@
+@import "./ofMixins/interpolate.scss";
+
+// all paddings
+@mixin set-pan {
+  @include interpolate(
+    (padding-left, padding-right, padding-top, padding-bottom),
+    nth($space-n, 1),
+    nth($space-n, 2)
+  );
+}
+@mixin set-pax {
+  @include interpolate(
+    (padding-left, padding-right, padding-top, padding-bottom),
+    nth($space-x, 1),
+    nth($space-x, 2)
+  );
+}
+@mixin set-pas {
+  @include interpolate(
+    (padding-left, padding-right, padding-top, padding-bottom),
+    nth($space-s, 1),
+    nth($space-s, 2)
+  );
+}
+@mixin set-pam {
+  @include interpolate(
+    (padding-left, padding-right, padding-top, padding-bottom),
+    nth($space-m, 1),
+    nth($space-m, 2)
+  );
+}
+@mixin set-pal {
+  @include interpolate(
+    (padding-left, padding-right, padding-top, padding-bottom),
+    nth($space-l, 1),
+    nth($space-l, 2)
+  );
+}
+@mixin set-pah {
+  @include interpolate(
+    (padding-left, padding-right, padding-top, padding-bottom),
+    nth($space-h, 1),
+    nth($space-h, 2)
+  );
+}
+
+// horizontal paddings
+@mixin set-phn {
+  @include interpolate(
+    (padding-left, padding-right),
+    nth($space-n, 1),
+    nth($space-n, 2)
+  );
+}
+@mixin set-phx {
+  @include interpolate(
+    (padding-left, padding-right),
+    nth($space-x, 1),
+    nth($space-x, 2)
+  );
+}
+@mixin set-phs {
+  @include interpolate(
+    (padding-left, padding-right),
+    nth($space-s, 1),
+    nth($space-s, 2)
+  );
+}
+@mixin set-phm {
+  @include interpolate(
+    (padding-left, padding-right),
+    nth($space-m, 1),
+    nth($space-m, 2)
+  );
+}
+@mixin set-phl {
+  @include interpolate(
+    (padding-left, padding-right),
+    nth($space-l, 1),
+    nth($space-l, 2)
+  );
+}
+@mixin set-phh {
+  @include interpolate(
+    (padding-left, padding-right),
+    nth($space-h, 1),
+    nth($space-h, 2)
+  );
+}
+
+// vertical paddings
+@mixin set-pvn {
+  @include interpolate(
+    (padding-top, padding-bottom),
+    nth($space-n, 1),
+    nth($space-n, 2)
+  );
+}
+@mixin set-pvx {
+  @include interpolate(
+    (padding-top, padding-bottom),
+    nth($space-x, 1),
+    nth($space-x, 2)
+  );
+}
+@mixin set-pvs {
+  @include interpolate(
+    (padding-top, padding-bottom),
+    nth($space-s, 1),
+    nth($space-s, 2)
+  );
+}
+@mixin set-pvm {
+  @include interpolate(
+    (padding-top, padding-bottom),
+    nth($space-m, 1),
+    nth($space-m, 2)
+  );
+}
+@mixin set-pvl {
+  @include interpolate(
+    (padding-top, padding-bottom),
+    nth($space-l, 1),
+    nth($space-l, 2)
+  );
+}
+@mixin set-pvh {
+  @include interpolate(
+    (padding-top, padding-bottom),
+    nth($space-h, 1),
+    nth($space-h, 2)
+  );
+}
+
+// left paddings
+@mixin set-pln {
+  @include interpolate(padding-left, nth($space-n, 1), nth($space-n, 2));
+}
+@mixin set-plx {
+  @include interpolate(padding-left, nth($space-x, 1), nth($space-x, 2));
+}
+@mixin set-pls {
+  @include interpolate(padding-left, nth($space-s, 1), nth($space-s, 2));
+}
+@mixin set-plm {
+  @include interpolate(padding-left, nth($space-m, 1), nth($space-m, 2));
+}
+@mixin set-pll {
+  @include interpolate(padding-left, nth($space-l, 1), nth($space-l, 2));
+}
+@mixin set-plh {
+  @include interpolate(padding-left, nth($space-h, 1), nth($space-h, 2));
+}
+
+// right paddings
+@mixin set-prn {
+  @include interpolate(padding-right, nth($space-n, 1), nth($space-n, 2));
+}
+@mixin set-prx {
+  @include interpolate(padding-right, nth($space-x, 1), nth($space-x, 2));
+}
+@mixin set-prs {
+  @include interpolate(padding-right, nth($space-s, 1), nth($space-s, 2));
+}
+@mixin set-prm {
+  @include interpolate(padding-right, nth($space-m, 1), nth($space-m, 2));
+}
+@mixin set-prl {
+  @include interpolate(padding-right, nth($space-l, 1), nth($space-l, 2));
+}
+@mixin set-prh {
+  @include interpolate(padding-right, nth($space-h, 1), nth($space-h, 2));
+}
+
+// top paddings
+@mixin set-ptn {
+  @include interpolate(padding-top, nth($space-n, 1), nth($space-n, 2));
+}
+@mixin set-ptx {
+  @include interpolate(padding-top, nth($space-x, 1), nth($space-x, 2));
+}
+@mixin set-pts {
+  @include interpolate(padding-top, nth($space-s, 1), nth($space-s, 2));
+}
+@mixin set-ptm {
+  @include interpolate(padding-top, nth($space-m, 1), nth($space-m, 2));
+}
+@mixin set-ptl {
+  @include interpolate(padding-top, nth($space-l, 1), nth($space-l, 2));
+}
+@mixin set-pth {
+  @include interpolate(padding-top, nth($space-h, 1), nth($space-h, 2));
+}
+
+// top paddings
+@mixin set-pbn {
+  @include interpolate(padding-bottom, nth($space-n, 1), nth($space-n, 2));
+}
+@mixin set-pbx {
+  @include interpolate(padding-bottom, nth($space-x, 1), nth($space-x, 2));
+}
+@mixin set-pbs {
+  @include interpolate(padding-bottom, nth($space-s, 1), nth($space-s, 2));
+}
+@mixin set-pbm {
+  @include interpolate(padding-bottom, nth($space-m, 1), nth($space-m, 2));
+}
+@mixin set-pbl {
+  @include interpolate(padding-bottom, nth($space-l, 1), nth($space-l, 2));
+}
+@mixin set-pbh {
+  @include interpolate(padding-bottom, nth($space-h, 1), nth($space-h, 2));
+}

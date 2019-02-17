@@ -1,0 +1,40 @@
+.TakeAway {
+  @include set-mvh;
+  @include set-pal;
+  @include set-type-s;
+  background: $mono-color-300;
+  display: flex;
+  flex-direction: column;
+  flex: 0 0 50%;
+  justify-content: center;
+  text-align: center;
+  @include bp("phone") {
+    @include set-mhl;
+  }
+  @include bp("tabletUp") {
+    @include set-mhh;
+  }
+  h1 {
+    @include set-type-m;
+    color: $mono-color-600;
+    font-weight: 600;
+    font-family: $brand-font;
+  }
+  p {
+    @include set-mtm;
+    @include set-type-x;
+    color: $mono-color-500;
+    text-transform: uppercase;
+  }
+  & + div {
+    @include set-mth;
+  }
+  .Actionbar {
+    @include set-mtl;
+    justify-content: center;
+  }
+  @include bp("tabletUp") {
+    @include set-pah;
+    min-height: 33.333vh;
+  }
+}

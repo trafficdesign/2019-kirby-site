@@ -1,0 +1,21 @@
+title: Projekty
+
+files: false
+
+pages:
+  template: project
+
+options:
+  delete: false
+  status: false
+  template: false
+  url: false
+
+fields:
+  title:
+    label: Tytuł
+    type: text
+
+  text:
+    label: Podtytuł
+    type: text

@@ -1,0 +1,61 @@
+@import "./ofMixins/interpolate.scss";
+
+// sizes
+@mixin set-size-n {
+  @include interpolate((width, height), nth($size-n, 1), nth($size-n, 2));
+}
+@mixin set-size-x {
+  @include interpolate((width, height), nth($size-x, 1), nth($size-x, 2));
+}
+@mixin set-size-s {
+  @include interpolate((width, height), nth($size-s, 1), nth($size-s, 2));
+}
+@mixin set-size-m {
+  @include interpolate((width, height), nth($size-m, 1), nth($size-m, 2));
+}
+@mixin set-size-l {
+  @include interpolate((width, height), nth($size-l, 1), nth($size-l, 2));
+}
+@mixin set-size-h {
+  @include interpolate((width, height), nth($size-h, 1), nth($size-h, 2));
+}
+
+// heights
+@mixin set-height-n {
+  @include interpolate(height, nth($size-n, 1), nth($size-n, 2));
+}
+@mixin set-height-x {
+  @include interpolate(height, nth($size-x, 1), nth($size-x, 2));
+}
+@mixin set-height-s {
+  @include interpolate(height, nth($size-s, 1), nth($size-s, 2));
+}
+@mixin set-height-m {
+  @include interpolate(height, nth($size-m, 1), nth($size-m, 2));
+}
+@mixin set-height-l {
+  @include interpolate(height, nth($size-l, 1), nth($size-l, 2));
+}
+@mixin set-height-h {
+  @include interpolate(height, nth($size-h, 1), nth($size-h, 2));
+}
+
+// widths
+@mixin set-width-n {
+  @include interpolate(width, nth($size-n, 1), nth($size-n, 2));
+}
+@mixin set-width-x {
+  @include interpolate(width, nth($size-x, 1), nth($size-x, 2));
+}
+@mixin set-width-s {
+  @include interpolate(width, nth($size-s, 1), nth($size-s, 2));
+}
+@mixin set-width-m {
+  @include interpolate(width, nth($size-m, 1), nth($size-m, 2));
+}
+@mixin set-width-l {
+  @include interpolate(width, nth($size-l, 1), nth($size-l, 2));
+}
+@mixin set-width-h {
+  @include interpolate(width, nth($size-h, 1), nth($size-h, 2));
+}

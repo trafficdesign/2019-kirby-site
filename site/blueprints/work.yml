@@ -1,0 +1,87 @@
+title: Realizacja
+
+pages: false
+
+fields:
+  title:
+    label: Tytuł
+    required: true
+    type: title
+
+  coverimage:
+    label: Okładka
+    required: true
+    type: image
+    width: 1/2
+
+  date:
+    default: today
+    format: MM/YYYY
+    icon: calendar
+    label: Data wdrożenia
+    placeholder: Data wdrożenia…
+    required: true
+    type: date
+    width: 1/2
+    translate: false
+
+  tags:
+    label: Rodzaj
+    type: select
+    width: 1/2
+    translate: false
+    options:
+      Murale: Murale
+      Szyldy: Szyldy
+      Bloki: Bloki
+      Instalacje: Rzeźby i instalacje
+      Detale: Detal
+
+  partners:
+    label: Partnerzy
+    type: text
+    width: 1/2
+
+  text:
+    label: Text
+    required: false
+    type: textarea
+
+  city:
+    label: Miasto
+    type: select
+    width: 1/2
+    translate: false
+    options:
+      gdansk: Gdańsk
+      gdynia: Gdynia
+      sopot: Sopot
+      warszawa: Warszawa
+
+  maplink:
+    width: 1/2
+    label: Link do mapy
+    type: url
+    translate: false
+
+  project:
+    label: Projekt
+    type: structure
+    translate: false
+    entry: >
+      {{project}}
+    fields:
+      project:
+        label: Wyszukaj projekt
+        type: page
+
+  authors:
+    label: Autor
+    type: structure
+    translate: false
+    entry: >
+      {{author}}
+    fields:
+      author:
+        label: Wyszukaj autora
+        type: page

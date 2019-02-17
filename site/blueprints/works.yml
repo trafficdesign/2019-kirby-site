@@ -1,0 +1,21 @@
+title: Realizacje
+
+files: false
+
+pages:
+  template: work
+
+options:
+  delete: false
+  status: false
+  template: false
+  url: false
+
+fields:
+  title:
+    label: Tytuł
+    type: text
+
+  text:
+    label: Podtytuł
+    type: text

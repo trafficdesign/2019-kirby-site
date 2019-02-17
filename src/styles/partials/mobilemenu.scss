@@ -1,0 +1,16 @@
+.MobileMenuItems {
+  display: block;
+  @include bp("phone") {
+    @include set-mth;
+    @include set-pth;
+  }
+}
+.MobileMenuItem {
+  @include set-mbm;
+  @include set-type-l;
+  display: block;
+  text-align: center;
+  @include bp("phone") {
+    @include set-mbs;
+  }
+}

@@ -1,0 +1,15 @@
+.ProjectLayout {
+  margin-left: auto;
+  margin-right: auto;
+  .ProjectHd {
+    @include set-mbl;
+  }
+  .ProjectBd {
+  }
+  .ProjectFt {
+    @include set-mtl;
+  }
+  .Copy + .Gallery {
+    @include set-mtl;
+  }
+}

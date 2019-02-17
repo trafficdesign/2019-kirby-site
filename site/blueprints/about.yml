@@ -1,0 +1,34 @@
+title: O nas
+
+pages:
+  template: member
+
+files: false
+
+options:
+  delete: false
+  status: false
+  template: false
+  url: false
+
+fields:
+  title:
+    label: Tytuł
+    type: title
+
+  subtitle:
+    label: Podtytuł
+    type: text
+
+  coverimage:
+    label: Okładka
+    required: true
+    type: image
+
+  text:
+    label: Text
+    type: textarea
+
+  team:
+    label: Team intro
+    type: text

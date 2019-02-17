@@ -1,0 +1,24 @@
+.modal {
+  @include set-pah;
+  align-items: center;
+  background: $mono-color-300;
+  bottom: 0;
+  display: none;
+  flex-direction: column;
+  justify-content: center;
+  left: 0;
+  position: fixed;
+  right: 0;
+  top: 0;
+  z-index: 2;
+  & div {
+    outline: none;
+  }
+  @include bp("hdesktopUp") {
+    display: none !important;
+  }
+}
+
+.modal.is-open {
+  display: flex;
+}

@@ -1,0 +1,49 @@
+.Tiles {
+  display: grid;
+  grid-gap: 40px;
+  grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
+}
+
+.Tile {
+  @include set-mtl;
+  @include set-type-m;
+  align-content: stretch;
+  align-items: center;
+  grid-row-end: span 1;
+  justify-content: flex-start;
+  position: relative;
+  text-align: center;
+}
+
+.TileThumb {
+  @include set-mbm;
+  line-height: 0;
+  @include bp("phone") {
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 50%;
+  }
+  img {
+    width: 100%;
+  }
+}
+
+.TileTitle {
+  @include set-man;
+  @include set-pan;
+  @include set-type-s;
+  color: $mono-color-600;
+  font-family: $brand-font;
+  font-weight: 600;
+}
+
+.TileSubtitle {
+  @include set-type-x;
+  display: block;
+}
+
+.TileText {
+  @include set-mtx;
+  @include set-type-x;
+  display: block;
+}

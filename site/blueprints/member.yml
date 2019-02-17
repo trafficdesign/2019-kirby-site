@@ -1,0 +1,32 @@
+title: Członek
+
+files: true
+
+pages: false
+
+options:
+  delete: true
+  status: true
+  template: false
+  url: false
+
+fields:
+  title:
+    label: Imię i nazwisko
+    required: true
+    type: title
+
+  role:
+    label: Tytuł
+    required: true
+    type: text
+
+  picture:
+    label: Zdjęcie
+    required: true
+    type: image
+
+  email:
+    label: Email
+    required: false
+    type: text

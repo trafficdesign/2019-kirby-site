@@ -1,0 +1,15 @@
+.PostLayout {
+  margin-left: auto;
+  margin-right: auto;
+  .PostHd {
+    @include set-mbl;
+  }
+  .PostBd {
+  }
+  .PostFt {
+    @include set-mtl;
+  }
+  .Copy + .Gallery {
+    @include set-mtl;
+  }
+}

@@ -1,0 +1,213 @@
+@import "./ofMixins/interpolate.scss";
+
+// all margins
+@mixin set-man {
+  @include interpolate(
+    (margin-left, margin-right, margin-top, margin-bottom),
+    nth($space-n, 1),
+    nth($space-n, 2)
+  );
+}
+@mixin set-max {
+  @include interpolate(
+    (margin-left, margin-right, margin-top, margin-bottom),
+    nth($space-x, 1),
+    nth($space-x, 2)
+  );
+}
+@mixin set-mas {
+  @include interpolate(
+    (margin-left, margin-right, margin-top, margin-bottom),
+    nth($space-s, 1),
+    nth($space-s, 2)
+  );
+}
+@mixin set-mam {
+  @include interpolate(
+    (margin-left, margin-right, margin-top, margin-bottom),
+    nth($space-m, 1),
+    nth($space-m, 2)
+  );
+}
+@mixin set-mal {
+  @include interpolate(
+    (margin-left, margin-right, margin-top, margin-bottom),
+    nth($space-l, 1),
+    nth($space-l, 2)
+  );
+}
+@mixin set-mah {
+  @include interpolate(
+    (margin-left, margin-right, margin-top, margin-bottom),
+    nth($space-h, 1),
+    nth($space-h, 2)
+  );
+}
+
+// horizontal margins
+@mixin set-mhn {
+  @include interpolate(
+    (margin-left, margin-right),
+    nth($space-n, 1),
+    nth($space-n, 2)
+  );
+}
+@mixin set-mhx {
+  @include interpolate(
+    (margin-left, margin-right),
+    nth($space-x, 1),
+    nth($space-x, 2)
+  );
+}
+@mixin set-mhs {
+  @include interpolate(
+    (margin-left, margin-right),
+    nth($space-s, 1),
+    nth($space-s, 2)
+  );
+}
+@mixin set-mhm {
+  @include interpolate(
+    (margin-left, margin-right),
+    nth($space-m, 1),
+    nth($space-m, 2)
+  );
+}
+@mixin set-mhl {
+  @include interpolate(
+    (margin-left, margin-right),
+    nth($space-l, 1),
+    nth($space-l, 2)
+  );
+}
+@mixin set-mhh {
+  @include interpolate(
+    (margin-left, margin-right),
+    nth($space-h, 1),
+    nth($space-h, 2)
+  );
+}
+
+// vertical margins
+@mixin set-mvn {
+  @include interpolate(
+    (margin-top, margin-bottom),
+    nth($space-n, 1),
+    nth($space-n, 2)
+  );
+}
+@mixin set-mvx {
+  @include interpolate(
+    (margin-top, margin-bottom),
+    nth($space-x, 1),
+    nth($space-x, 2)
+  );
+}
+@mixin set-mvs {
+  @include interpolate(
+    (margin-top, margin-bottom),
+    nth($space-s, 1),
+    nth($space-s, 2)
+  );
+}
+@mixin set-mvm {
+  @include interpolate(
+    (margin-top, margin-bottom),
+    nth($space-m, 1),
+    nth($space-m, 2)
+  );
+}
+@mixin set-mvl {
+  @include interpolate(
+    (margin-top, margin-bottom),
+    nth($space-l, 1),
+    nth($space-l, 2)
+  );
+}
+@mixin set-mvh {
+  @include interpolate(
+    (margin-top, margin-bottom),
+    nth($space-h, 1),
+    nth($space-h, 2)
+  );
+}
+
+// left margins
+@mixin set-mln {
+  @include interpolate(margin-left, nth($space-n, 1), nth($space-n, 2));
+}
+@mixin set-mlx {
+  @include interpolate(margin-left, nth($space-x, 1), nth($space-x, 2));
+}
+@mixin set-mls {
+  @include interpolate(margin-left, nth($space-s, 1), nth($space-s, 2));
+}
+@mixin set-mlm {
+  @include interpolate(margin-left, nth($space-m, 1), nth($space-m, 2));
+}
+@mixin set-mll {
+  @include interpolate(margin-left, nth($space-l, 1), nth($space-l, 2));
+}
+@mixin set-mlh {
+  @include interpolate(margin-left, nth($space-h, 1), nth($space-h, 2));
+}
+
+// right margins
+@mixin set-mrn {
+  @include interpolate(margin-right, nth($space-n, 1), nth($space-n, 2));
+}
+@mixin set-mrx {
+  @include interpolate(margin-right, nth($space-x, 1), nth($space-x, 2));
+}
+@mixin set-mrs {
+  @include interpolate(margin-right, nth($space-s, 1), nth($space-s, 2));
+}
+@mixin set-mrm {
+  @include interpolate(margin-right, nth($space-m, 1), nth($space-m, 2));
+}
+@mixin set-mrl {
+  @include interpolate(margin-right, nth($space-l, 1), nth($space-l, 2));
+}
+@mixin set-mrh {
+  @include interpolate(margin-right, nth($space-h, 1), nth($space-h, 2));
+}
+
+// top margins
+@mixin set-mtn {
+  @include interpolate(margin-top, nth($space-n, 1), nth($space-n, 2));
+}
+@mixin set-mtx {
+  @include interpolate(margin-top, nth($space-x, 1), nth($space-x, 2));
+}
+@mixin set-mts {
+  @include interpolate(margin-top, nth($space-s, 1), nth($space-s, 2));
+}
+@mixin set-mtm {
+  @include interpolate(margin-top, nth($space-m, 1), nth($space-m, 2));
+}
+@mixin set-mtl {
+  @include interpolate(margin-top, nth($space-l, 1), nth($space-l, 2));
+}
+@mixin set-mth {
+  @include interpolate(margin-top, nth($space-h, 1), nth($space-h, 2));
+}
+
+// top margins
+@mixin set-mbn {
+  @include interpolate(margin-bottom, nth($space-n, 1), nth($space-n, 2));
+}
+@mixin set-mbx {
+  @include interpolate(margin-bottom, nth($space-x, 1), nth($space-x, 2));
+}
+@mixin set-mbs {
+  @include interpolate(margin-bottom, nth($space-s, 1), nth($space-s, 2));
+}
+@mixin set-mbm {
+  @include interpolate(margin-bottom, nth($space-m, 1), nth($space-m, 2));
+}
+@mixin set-mbl {
+  @include interpolate(margin-bottom, nth($space-l, 1), nth($space-l, 2));
+}
+@mixin set-mbh {
+  @include interpolate(margin-bottom, nth($space-h, 1), nth($space-h, 2));
+}

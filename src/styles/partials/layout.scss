@@ -1,0 +1,31 @@
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  background: white;
+  min-height: 100vh;
+}
+
+body {
+  @include set-type-s;
+  color: $mono-color-500;
+  font-family: $body-font;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.4em;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: $mono-color-600;
+}
+
+a {
+  color: $brand-color;
+}

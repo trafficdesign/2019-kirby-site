@@ -1,0 +1,88 @@
+.Copy {
+  @include set-type-s;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: $mwidth-s;
+
+  p,
+  blockquote,
+  code,
+  div,
+  ul,
+  ol {
+    &:not(:first-child) {
+      @include set-mtm;
+    }
+  }
+  h2,
+  h3,
+  h4 {
+    &:not(:first-child) {
+      @include set-mth;
+    }
+  }
+
+  h2,
+  h3,
+  h4 {
+    color: $mono-color-600;
+  }
+  h2 {
+    @include set-type-l;
+    font-family: $body-font;
+    display: block;
+  }
+  h3 {
+    @include set-type-m;
+    display: block;
+    font-family: $body-font;
+  }
+  h4 {
+    @include set-type-s;
+    display: block;
+    font-family: $body-font;
+    text-transform: uppercase;
+  }
+
+  strong {
+    font-weight: 600;
+  }
+  em {
+    font-style: italic;
+  }
+
+  ol,
+  ul {
+  }
+  ol {
+    counter-reset: li;
+  }
+  ol li:before,
+  ul li:before {
+    @include set-mrm;
+    @include set-width-s;
+    color: $mono-color-300;
+    direction: rtl;
+    display: inline-block;
+    text-align: right;
+  }
+  ol li:before {
+    content: counter(li);
+    counter-increment: li;
+  }
+  ul li:before {
+    content: "—";
+  }
+
+  a,
+  a:active,
+  a:visited {
+    color: $brand-color;
+    font-family: inherit;
+    text-decoration: none;
+    transition: background $time-s;
+  }
+  a:hover {
+    background-color: $decor-color;
+  }
+}

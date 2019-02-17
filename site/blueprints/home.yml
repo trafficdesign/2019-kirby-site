@@ -1,0 +1,40 @@
+title: Strona domowa
+
+pages: false
+
+options:
+  status: false
+  template: false
+  url: false
+  delete: false
+
+fields:
+  title:
+    label: Tytuł
+    type: text
+    required: true
+
+  heading:
+    label: Nagłówek
+    type: text
+    required: true
+
+  coverimage:
+    label: Okładka
+    required: true
+    type: image
+
+  text:
+    label: Tekst
+    type: text
+    required: true
+
+  workcta:
+    label: Wołacz realizacji
+    type: text
+    required: true
+
+  newscta:
+    label: Wołacz aktualności
+    type: text
+    required: true

@@ -1,0 +1,24 @@
+.Heading {
+  @include set-mvh;
+  text-align: center;
+  .HeadingIntro {
+    @include set-mbs;
+    @include set-type-m;
+    display: block;
+  }
+  .HeadingTitle {
+    @include set-type-h;
+    font-family: $brand-font;
+    font-weight: 600;
+  }
+  .HeadingSubtitle {
+    @include set-type-m;
+  }
+  .HeadingCaps {
+    @include set-mts;
+    @include set-type-x;
+    color: $mono-color-400;
+    letter-spacing: $tracking-s;
+    text-transform: uppercase;
+  }
+}

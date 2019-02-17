@@ -1,0 +1,21 @@
+.Button {
+  background-color: transparent;
+  border-color: $brand-color;
+  border-style: solid;
+  border-width: 2px;
+  color: $brand-color;
+  cursor: pointer;
+  display: inline-block;
+  font-family: $brand-font;
+  font-size: inherit;
+  font-weight: 600;
+  outline: none;
+  padding: 0.5em 1em 0.3em;
+  text-align: center;
+  text-decoration: none;
+  transition: background $time-m, color $time-m;
+  &:hover {
+    background-color: $brand-color;
+    color: white;
+  }
+}

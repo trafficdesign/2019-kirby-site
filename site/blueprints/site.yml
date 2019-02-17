@@ -1,0 +1,29 @@
+title: Site
+
+pages: false
+
+fields:
+  title:
+    label: Tytuł SEO
+    type: text
+
+  description:
+    label: Opis SEO
+    type: textarea
+
+  keywords:
+    label: Keywords SEO
+    type: text
+
+  coverimage:
+    label: Okładka Facebook
+    required: true
+    type: image
+
+  name:
+    label: Nazwa w stopce
+    type: text
+
+  address:
+    label: Adres w stopce
+    type: text

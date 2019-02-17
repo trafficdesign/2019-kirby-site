@@ -1,0 +1,41 @@
+title: Contact
+
+pages: false
+files: false
+
+options:
+  delete: false
+  status: false
+  template: false
+  url: false
+
+fields:
+  title:
+    label: Title
+    type: title
+    required: true
+
+  subtitle:
+    label: Intro
+    type: text
+    required: true
+
+  facebook:
+    label: Facebook
+    type: text
+    required: true
+
+  instagram:
+    label: Instagram
+    type: text
+    required: true
+
+  linkedin:
+    label: Linkedin
+    type: text
+    required: true
+
+  email:
+    label: Email
+    type: text
+    required: true

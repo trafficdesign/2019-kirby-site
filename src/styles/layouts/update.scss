@@ -1,0 +1,12 @@
+.UpdateLayout {
+  margin-left: auto;
+  margin-right: auto;
+  .UpdateHd {
+    @include set-mbl;
+  }
+  .UpdateBd {
+  }
+  .UpdateFt {
+    @include set-mtl;
+  }
+}

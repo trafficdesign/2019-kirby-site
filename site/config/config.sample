@@ -1,0 +1,59 @@
+<?php
+
+/*
+
+---------------------------------------
+License Setup
+---------------------------------------
+
+Please add your license key, which you've received
+via email after purchasing Kirby on http://getkirby.com/buy
+
+It is not permitted to run a public website without a
+valid license key. Please read the End User License Agreement
+for more information: http://getkirby.com/license
+
+*/
+
+c::set('license', 'LICENCE HERE');
+
+/*
+
+---------------------------------------
+Kirby Configuration
+---------------------------------------
+
+By default you don't have to configure anything to
+make Kirby work. For more fine-grained configuration
+of the system, please check out http://getkirby.com/docs/advanced/options
+
+*/
+
+// Since Kirby 2.4, Kirby supports cross-domain multi-language sites. You can define the domain for each language like this:
+c::set('languages', array(
+  array(
+    'code'    => 'en',
+    'locale'  => 'en_US',
+    'name'    => 'English',
+    'url'     => '/en',
+  ),
+  array(
+    'code'    => 'pl',
+    'default' => true,
+    'locale'  => 'pl',
+    'name'    => 'Polish',
+    'url'     => '/',
+  ),
+));
+
+// Kirby can detect the prefered language of the visitor. This has to be activated by adding:
+c::set('language.detect', true);
+
+// By default Kirby is using PHP's date function to format dates for pages and files. date() does not respect locale settings though and always creates English month and day names. You can now switch to strftime() as your primary date handler, which uses a different format for dates, but also supports translated month and day names. To switch the handler, add the following to your config:
+c::set('date.handler', 'strftime');
+
+// Debug
+c::set('debug',true);
+
+// Cache
+c::set('cache', false);

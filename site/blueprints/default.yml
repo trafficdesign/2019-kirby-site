@@ -1,0 +1,10 @@
+title: Page
+
+fields:
+  title:
+    label: Tytuł
+    type: text
+
+  text:
+    label: Podtytuł
+    type: text

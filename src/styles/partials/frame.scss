@@ -1,0 +1,29 @@
+.Frame {
+  background: white;
+  position: fixed;
+  z-index: 1;
+  &.Frame--ft {
+    left: 0;
+  }
+  &.Frame--fr {
+    right: 0;
+  }
+  &.Frame--fb {
+    bottom: 0;
+  }
+  &.Frame--fl {
+    left: 0;
+  }
+}
+.Frame.Frame--fl,
+.Frame.Frame--fr {
+  bottom: 0;
+  top: 0;
+  width: 10px;
+}
+.Frame.Frame--fb,
+.Frame.Frame--ft {
+  height: 10px;
+  left: 0;
+  right: 0;
+}
