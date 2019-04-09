@@ -67,7 +67,6 @@
                       <img src="<?= $image->thumb(
                         array(
                           'crop' => true,
-                          'grayscale' => true,
                           'height' => 300,
                           'quality' => 90,
                           'width' => 400,
@@ -93,7 +92,6 @@
                           array(
                             'width' => 300,
                             'height' => 300,
-                            'grayscale' => true,
                             'quality' => 90
                           )) ?>
                         </Avatar>
