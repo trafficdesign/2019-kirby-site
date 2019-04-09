@@ -6,8 +6,8 @@
   "author": "piotr@moglistudio.com",
   "license": "MIT",
   "scripts": {
-    "start": "./node_modules/parcel-bundler/bin/cli.js watch src/main.js --out-dir assets/bundle",
-    "build": "./node_modules/parcel-bundler/bin/cli.js build src/main.js --out-dir assets/bundle"
+    "start": "./node_modules/parcel-bundler/bin/cli.js watch src/main.js --out-dir assets/bundle --public-url ./",
+    "build": "./node_modules/parcel-bundler/bin/cli.js build src/main.js --out-dir assets/bundle --public-url ./"
   },
   "devDependencies": {
     "eslint": "5.16.0",
