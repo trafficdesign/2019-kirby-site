@@ -15,7 +15,7 @@ return function($site, $pages, $page) {
                    ->onlyTranslated()
                    ->sortBy('date', 'asc')
                    ->flip()
-                   ->paginate(($perpage >= 1)? $perpage : 32);
+                   ->paginate(($perpage >= 1)? $perpage : 24);
 
  if($tag = param('tag')) {
    $works = $page->children()
@@ -24,7 +24,7 @@ return function($site, $pages, $page) {
                     ->filterBy('tags', $tag, ',')
                     ->sortBy('date', 'asc')
                     ->flip()
-                    ->paginate(($perpage >= 1)? $perpage : 32);
+                    ->paginate(($perpage >= 1)? $perpage : 24);
  }
 
   return [
