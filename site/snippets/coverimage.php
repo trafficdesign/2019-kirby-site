@@ -6,6 +6,6 @@
         'height' => 900,
         'quality' => 90,
         'width' => 1200,
-      ))->url() ?>" alt="" class="CoverImage"/>
+      ))->url() ?>" alt="" class="CoverImage" width="900"/>
   </figure>
 <?php endif ?>

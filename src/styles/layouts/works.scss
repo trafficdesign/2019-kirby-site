@@ -6,7 +6,7 @@
       justify-content: center;
       margin-bottom: -1.5em;
       position: relative;
-      z-index: 2;
+      z-index: 5;
     }
   }
   .Tabs {
@@ -73,13 +73,16 @@
       bottom: 0;
       display: flex;
       flex-direction: row;
+      height: 100%;
       justify-content: center;
       left: 0;
+      overflow: hidden;
       position: absolute;
       right: 0;
       text-align: center;
       top: 0;
-      z-index: 1;
+      width: 100%;
+      z-index: 2;
       h2 {
         @include set-type-m;
         line-height: $leading-m;
