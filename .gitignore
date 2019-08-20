@@ -44,4 +44,5 @@ thumbs
 yarn.lock
 yarn-error.log
 
+.vscode
 .remote-sync.json

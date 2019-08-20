@@ -53,6 +53,7 @@ fields:
     width: 1/2
     translate: false
     options:
+      elblag: Elbląg
       gdansk: Gdańsk
       gdynia: Gdynia
       sopot: Sopot
