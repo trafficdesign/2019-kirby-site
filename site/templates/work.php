@@ -94,7 +94,7 @@
                             'height' => 300,
                             'quality' => 90
                           )) ?>
-                        </Avatar>
+                        </span>
                     </div>
                     <div class="AuthorDetails">
                       <h3><?= $author->content()->get('title') ?></h3>
