@@ -23,28 +23,30 @@
 
           <h2 class="AboutTitle"><?= $page->team()->html() ?></h2>
 
-          <ul class="Tiles">
+          <ul class="Profiles">
             <?php foreach($page->children()->visible() as $member): ?>
               <li>
-                <div class="Tile">
+                <div class="Profile">
                   <div>
                     <?php if($image = $member->image()): ?>
-                      <figure class="TileThumb">
-                        <img src="<?= $image->thumb(
+                      <figure class="ProfileThumb td-tile">
+                        <div class="td-tile__thumb">
+                          <?php snippet('tilecover', ['caption' => $member->title()->html(), 'image' => $image->thumb(
                           array(
                             'width' => 400,
                             'height' => 400,
                             'crop' => true,
                             'grayscale' => true,
                             'quality' => 90
-                          ))->url() ?>" alt="Portrait of <?= $member->title()->html() ?>" />
-                      </figure>
+                          ))]) ?>
+                        </div>
+                    </figure>
                     <?php endif ?>
                   </div>
                   <div>
-                    <h3 class="TileTitle"><?= $member->title()->html() ?></h3>
-                    <p class="TileSubtitle"><?= $member->role()->html() ?></p>
-                    <p class="TileText">
+                    <h3 class="ProfileTitle"><?= $member->title()->html() ?></h3>
+                    <p class="ProfileSubtitle"><?= $member->role()->html() ?></p>
+                    <p class="ProfileText">
                       <a class="Link" href="mailto:<?= $member->email()->html() ?>"><?= $member->email()->html() ?></a></p>
                     </p>
                   </div>

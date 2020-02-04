@@ -11,11 +11,11 @@ return function($site, $pages, $page) {
 
   $perpage  = $page->perpage()->int();
   $projects = $page->children()
-                   ->visible()
-                   ->onlyTranslated()
-                   ->sortBy('date', 'asc')
-                   ->flip()
-                   ->paginate(($perpage >= 1)? $perpage : 6);
+    ->visible()
+    ->onlyTranslated()
+    ->sortBy('date', 'asc')
+    ->flip()
+    ->paginate(($perpage >= 1)? $perpage : 6);
 
   return [
     'projects'   => $projects,

@@ -2,8 +2,8 @@
   <figure class="Cover">
     <img src="<?= $image->thumb(
       array(
-        'width' => 600,
-        'height' => 400,
+        'width' => 500,
+        'height' => 340,
         'crop' => true,
         'grayscale' => true,
         'quality' => 90

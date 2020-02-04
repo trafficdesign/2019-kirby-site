@@ -1,0 +1,15 @@
+.td-actionable {
+  color: inherit;
+  cursor: pointer;
+  transition: box-shadow $time-m, background $time-m, color $time-m, border $time-m;
+  &:active,
+  &:focus,
+  &:hover {
+    outline: none;
+  }
+  &:focus {
+    background: $mono-color-600;
+    box-shadow: 0 0 0 5px $mono-color-600;
+    color: $mono-color-300 !important;
+  }
+}

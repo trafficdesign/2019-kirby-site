@@ -12,18 +12,22 @@
       </header>
 
       <section class="ProjectsLayout">
-        <?php foreach($projects as $item): ?>
+        <?php foreach($projects as $item):
+          $image = $item->coverimage()->toFile()->thumb(array(
+            'crop' => true,
+            'height' => 600,
+            'quality' => 95,
+            'width' => 800,
+          ));
+          $caption = $item->title()->html();
+        ?>
           <article class="Project">
-            <div class="ProjectEl theme--dark">
-              <a class="ProjectHd" href="<?= $item->url() ?>">
-                <h2>
-                  <span class="Link" ><?= $item->title()->html() ?></span>
-                </h2>
-              </a>
-              <div class="ProjectBd">
-                <?php snippet('coverthumb', $item) ?>
+            <a class="td-tile td-actionable" href="<?= $item->url() ?>">
+              <h2 class="td-tile__title persist"><span><?= $item->title()->html() ?></span></h2>
+              <div class="td-tile__thumb">
+                <?php snippet('tilecover', ['caption' => $caption, 'image' => $image, 'alt' => $caption]) ?>
               </div>
-            </div>
+            </a>
             <div class="ProjectFt">
               <p><?= $item->intro() ?></p>
               <p>

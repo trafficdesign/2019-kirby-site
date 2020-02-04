@@ -12,21 +12,26 @@
       </header>
 
       <section class="UpdatesLayout">
-        <?php foreach($news as $item): ?>
-          <article class="Update theme--dark">
-            <div class="UpdateEl">
-              <a class="UpdateHd" href="<?= $item->url() ?>">
-                <h2>
-                  <span class="Link" ><?= $item->title()->html() ?></span>
-                </h2>
+        <?php foreach($news as $item):
+            $url = $item->url();
+            $image = $item->coverimage()->toFile()->thumb(array(
+              'crop' => true,
+              'height' => 340,
+              'quality' => 95,
+              'width' => 500,
+            ));
+            $caption = $item->title()->html();
+            ?>
+            <article class="Update theme--dark">
+              <a class="td-tile td-actionable" href="<?= $url ?>">
+                <h2 class="td-tile__title persist"><span><?= $item->title()->html() ?></span></h2>
+                <div class="td-tile__thumb">
+                  <?php snippet('tilecover', ['caption' => $caption, 'image' => $image, 'alt' => $caption]) ?>
+                </div>
+                <p class="td-tile__ft"><span><?= date('d.m.Y', $item->date()) ?></span></p>
               </a>
-              <div class="UpdateBd">
-                <?php snippet('coverthumb', $item) ?>
-              </div>
-              <p class="UpdateFt"><span><?= date('d.m.Y', $item->date()) ?></span></p>
-            </div>
-          </article>
-        <?php endforeach ?>
+            </article>
+          <?php endforeach ?>
       </section>
 
       <?php snippet('pagination') ?>

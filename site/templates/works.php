@@ -1,21 +1,16 @@
 <?php snippet('header') ?>
 <div class="TopbarPush"></div>
-
   <main class="Main fade-in" role="main">
     <div class="MainEl">
-
       <header class="Heading">
         <h1 class="HeadingTitle"><?= $page->title()->html() ?></h1>
         <?php if($pagination->page() == 1):?>
           <p class="HeadingSubtitle"><?= $page->text()->html() ?></p>
         <?php endif ?>
       </header>
-
       <section class="WorksLayout">
-
         <div class="Toolbar">
           <ul class="Tabs">
-
             <li class="Tab">
               <?php
                 if ($tag = param('tag')) {
@@ -35,35 +30,31 @@
               </a>
             </li>
             <?php endforeach ?>
-
           </ul>
         </div>
-
         <div class="WorksListing">
-          <?php foreach($works as $item): ?>
-            <article class="Work theme--dark">
-              <div class="WorkEl">
-                <a class="WorkHd" href="<?= $item->url() ?>">
-                  <h2>
-                    <span class="Link" ><?= $item->title()->html() ?></span>
-                  </h2>
-                </a>
-                <div class="WorkBd">
-                  <?php snippet('coverthumb', $item) ?>
+          <?php foreach($works as $item):
+            $url = $item->url();
+            $image = $item->coverimage()->toFile()->thumb(array(
+              'crop' => true,
+              'height' => 340,
+              'quality' => 95,
+              'width' => 500,
+            ));
+            $caption = $item->title()->html();
+            ?>
+              <a class="td-tile td-actionable" href="<?= $url ?>">
+                <h2 class="td-tile__title"><span><?= $item->title()->html() ?></span></h2>
+                <div class="td-tile__thumb">
+                  <?php snippet('tilecover', ['caption' => $caption, 'image' => $image, 'alt' => $caption]) ?>
                 </div>
-              </div>
-            </article>
+              </a>
           <?php endforeach ?>
-
         </div>
-
       </section>
-
       <?php snippet('pagination') ?>
-
     </div>
   </main>
-
   <div class="FooterWrapper" role="contentinfo">
   <?php snippet('takeaway') ?>
   <?php snippet('footer') ?>
