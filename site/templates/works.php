@@ -17,16 +17,20 @@
           <ul class="Tabs">
 
             <li class="Tab">
-              <? $urlParam = param('tag'); ?>
-              <a class="TabLink <?php e($urlParam, '', ' is-active') ?>" href="<?= url($page->url()) ?>">
+              <?php
+                if ($tag = param('tag')) {
+                  $urlParam = param('tag');
+                } else {
+                  $urlParam = '';
+                }
+              ?>
+              <a class="TabLink <?= e($urlParam === '', 'is-active', '') ?>" href="<?= url($page->url()) ?>">
                 <?= l::get('allWorks') ?>
               </a>
             </li>
-            <?php foreach($tags as $tag): ?>
+            <?php foreach($alltags as $tag): ?>
             <li class="Tab">
-              <a class="TabLink<? if(v::same(kirby()->request()->params()->tag(), $tag)) {
-                echo ' is-active';
-              } ?>" href="<?= url($page->url() . '/' . url::paramsToString(['tag' => $tag])) ?>">
+              <a class="TabLink <?= e($urlParam === $tag, 'is-active', '') ?>" href="<?= url($page->url() . '/' . url::paramsToString(['tag' => $tag])) ?>">
                 <?= l::get($tag) ?>
               </a>
             </li>
