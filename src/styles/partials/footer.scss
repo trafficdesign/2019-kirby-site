@@ -7,23 +7,21 @@
 
 .Footer {
   @include set-phl;
-  .FooterCopy {
-    p {
-      @include set-type-x;
-      color: $mono-color-600;
-    }
-  }
+  @include set-type-x;
+  line-height: 1em;
   @include bp("phone") {
+    display: flex;
+    flex-direction: column;
     text-align: center;
-    & > *:first-child {
-      @include set-mbm;
+    & > *:not(:last-child) {
+      @include set-mbl;
     }
   }
   @include bp("tabletUp") {
     @include set-phh;
-    align-items: flex-end;
+    align-items: flex-start;
     display: flex;
-    flex-direction: row;
+    flex-direction: row-reverse;
     flex: 0 0 25%;
     justify-content: space-between;
     & > *:first-child {
@@ -33,6 +31,17 @@
     img {
       @include set-mrm;
     }
+  }
+  .FooterPartners {
+    a {
+      display: inline-block;
+    }
+  }
+  .FooterName {
+    color: #bababa;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    line-height: 1em;
   }
   .SocialLinks {
     @include set-mls;

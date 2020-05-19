@@ -23,12 +23,12 @@ if($page->hasNextVisible() || $page->hasPrevVisible()): ?>
     <div>
       <?php if($page->hasPrevVisible()): ?>
         <i class="icon-arrow-right">←</i>
-        <a class="PaginationItem Link <?= $directionPrev ?>" href="<?= $page->prevVisible()->url() ?>" rel="prev" title="<?= $page->prevVisible()->title()->html() ?>">
+        <a class="PaginationItem td-link <?= $directionPrev ?>" href="<?= $page->prevVisible()->url() ?>" rel="prev" title="<?= $page->prevVisible()->title()->html() ?>">
            <?= l::get('newer-item') ?>
         </a>
       <?php else: ?>
 
-        <span class="PaginationItem Link <?= $directionPrev ?> is-inactive">
+        <span class="PaginationItem td-link <?= $directionPrev ?> is-inactive">
           <i class="icon-arrow-right">←</i> <?= l::get('newer-item') ?>
         </span>
       <?php endif ?>
@@ -36,12 +36,12 @@ if($page->hasNextVisible() || $page->hasPrevVisible()): ?>
 
     <div>
       <?php if($page->hasNextVisible()): ?>
-        <a class="PaginationItem Link <?= $directionNext ?>" href="<?= $page->nextVisible()->url() ?>" rel="next" title="<?= $page->nextVisible()->title()->html() ?>">
+        <a class="PaginationItem td-link <?= $directionNext ?>" href="<?= $page->nextVisible()->url() ?>" rel="next" title="<?= $page->nextVisible()->title()->html() ?>">
           <?= l::get('older-item') ?>
         </a>
         <i class="icon-arrow-left">→</i>
       <?php else: ?>
-        <span class="PaginationItem Link <?= $directionNext ?> is-inactive">
+        <span class="PaginationItem td-link <?= $directionNext ?> is-inactive">
           <?= l::get('older-item') ?> <i class="icon-arrow-left">→</i>
         </span>
       <?php endif ?>

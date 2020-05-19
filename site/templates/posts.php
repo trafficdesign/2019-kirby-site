@@ -17,7 +17,7 @@
             <div class="PostEl theme--dark">
               <a class="PostHd" href="<?= $item->url() ?>">
                 <h2>
-                  <span class="Link" ><?= $item->title()->html() ?></span>
+                  <span class="td-link" ><?= $item->title()->html() ?></span>
                 </h2>
               </a>
               <div class="PostBd">
@@ -28,7 +28,7 @@
               <p><?= $item->intro() ?></p>
               <p>
                 <a class="Action" href="<?= $item->url() ?>">
-                  <span class="Link" ><?= l::get('read-more') ?></span>
+                  <span class="td-link" ><?= l::get('read-more') ?></span>
                 </a>
               </p>
             </div>

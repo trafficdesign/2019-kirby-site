@@ -8,14 +8,14 @@
         <ul class="MobileMenuItems">
           <?php foreach($pages->visible() as $item): ?>
           <li class="MobileMenuItem">
-            <a href="<?= $item->url() ?>" class="Link<?= r($item->isOpen(), ' is-active') ?>"><?= $item->title()->html() ?></a>
+            <a href="<?= $item->url() ?>" class="td-link<?= r($item->isOpen(), ' is-active') ?>"><?= $item->title()->html() ?></a>
           </li>
           <?php endforeach ?>
           <li class="MobileMenuItem">
-            <a class="Link" href="http://trafficdesign.shoplo.com/" target="_blank"><?= l::get('nav-linkto-shop') ?></a>
+            <a class="td-link" href="http://trafficdesign.shoplo.com/" target="_blank"><?= l::get('nav-linkto-shop') ?></a>
           </li>
           <li class="MobileMenuItem">
-            <a class="Link" href="https://trafficdesign.prowly.com/" target="_blank"><?= l::get('nav-linkto-media') ?></a>
+            <a class="td-link" href="https://trafficdesign.prowly.com/" target="_blank"><?= l::get('nav-linkto-media') ?></a>
           </li>
         </ul>
       </div>

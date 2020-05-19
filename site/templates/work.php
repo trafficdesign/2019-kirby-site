@@ -22,7 +22,7 @@
                   <div>
                     <h2><?= l::get('locationLabel') ?></h2>
                     <?php if(!$page->maplink()->empty()): ?>
-                      <a class="Link" href="<?= $page->maplink()->text() ?>"><?= l($page->content()->city()->value()); ?></a>
+                      <a class="td-link" href="<?= $page->maplink()->text() ?>"><?= l($page->content()->city()->value()); ?></a>
                     <?php else: ?>
                       <?= $page->content()->city()->text() ?>
                     <?php endif ?>
@@ -35,7 +35,7 @@
                       <?php $projectRefUrl = $projectRef->project()->url() ?>
                       <?php $projects = $pages->get('projekty') ?>
                       <?php $project = $projects->children()->findBy('url', $projectRefUrl) ?>
-                      <a class="Link" href="<?= $projectRefUrl ?>"><?= $project->content()->get('title') ?></a>
+                      <a class="td-link" href="<?= $projectRefUrl ?>"><?= $project->content()->get('title') ?></a>
                     <?php endforeach ?>
                   </div>
                 <?php endif ?>

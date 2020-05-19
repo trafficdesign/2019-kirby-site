@@ -1,4 +1,4 @@
-.Link {
+.td-link {
   background-color: transparent;
   border-color: transparent;
   border-style: solid;
@@ -30,6 +30,19 @@
     &:active,
     &.is-active {
       border-color: white;
+    }
+  }
+}
+
+.td-icon-link {
+  @extend .td-link;
+  @include set-type-s;
+  text-align: center;
+  &.td-actionable {
+    &:focus {
+      background: $mono-color-600;
+      box-shadow: 0 0 0 5px $mono-color-600;
+      color: $mono-color-300 !important;
     }
   }
 }

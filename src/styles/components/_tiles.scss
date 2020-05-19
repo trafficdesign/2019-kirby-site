@@ -64,6 +64,9 @@
     @include set-type-x;
     background-color: $decor-color;
   }
+  .td-tile:focus & {
+    color: $mono-color-600;
+  }
 }
 
 .td-tile__cover {
@@ -86,7 +89,7 @@
     background-repeat: no-repeat;
     background-size: 100% 100%;
     bottom: 0;
-    content: ' ';
+    content: " ";
     display: block;
     left: 0;
     overflow: hidden;

@@ -21,7 +21,7 @@
               <li>
                 <i class="icon-facebook"></i>
                 <a
-                  class="Link"
+                  class="td-link"
                   href="https://facebook.com/<?= $page->facebook()->html() ?>"
                   target="_blank"
                 >
@@ -31,7 +31,7 @@
               <li>
                 <i class="icon-instagram"></i>
                 <a
-                  class="Link"
+                  class="td-link"
                   href="https://www.instagram.com/<?= $page->instagram()->html() ?>"
                   target="_blank"
                 >
@@ -41,7 +41,7 @@
               <li>
                 <i class="icon-linkedin"></i>
                 <a
-                  class="Link"
+                  class="td-link"
                   href="https://linkedin.com/company/<?= $page->linkedin()->html() ?>/"
                   target="_blank"
                 >

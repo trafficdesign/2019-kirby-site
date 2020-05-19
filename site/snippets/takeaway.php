@@ -8,7 +8,7 @@
       <?= l::get('aboutUsCta') ?>
     </a>
     <a
-      class="Link"
+      class="td-link"
       href="<?php echo $pages->find('kontakt')->url() ?>"
     ><?= l::get('contactUsCta') ?></a>
   </div>

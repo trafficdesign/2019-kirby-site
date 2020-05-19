@@ -47,7 +47,7 @@
                     <h3 class="ProfileTitle"><?= $member->title()->html() ?></h3>
                     <p class="ProfileSubtitle"><?= $member->role()->html() ?></p>
                     <p class="ProfileText">
-                      <a class="Link" href="mailto:<?= $member->email()->html() ?>"><?= $member->email()->html() ?></a></p>
+                      <a class="td-link" href="mailto:<?= $member->email()->html() ?>"><?= $member->email()->html() ?></a></p>
                     </p>
                   </div>
                 </div>

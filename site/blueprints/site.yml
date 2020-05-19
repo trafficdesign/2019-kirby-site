@@ -23,7 +23,3 @@ fields:
   name:
     label: Nazwa w stopce
     type: text
-
-  address:
-    label: Adres w stopce
-    type: text

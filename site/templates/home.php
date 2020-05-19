@@ -10,7 +10,7 @@
         <p><?= $page->text()->text() ?></p>
         <div class="Actionbar">
           <a href="<?php echo $pages->find('realizacje')->url() ?>" class="Button"><?= $page->workcta()->text() ?></a>
-          <a href="<?php echo $pages->find('aktualnosci')->url() ?>" class="Link"><?= $page->newscta()->text() ?></a>
+          <a href="<?php echo $pages->find('aktualnosci')->url() ?>" class="td-link"><?= $page->newscta()->text() ?></a>
         </div>
       </div>
     </div>

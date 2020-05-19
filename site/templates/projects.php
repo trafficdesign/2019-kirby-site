@@ -32,7 +32,7 @@
               <p><?= $item->intro() ?></p>
               <p>
                 <a class="Action" href="<?= $item->url() ?>">
-                  <span class="Link" ><?= l::get('read-more') ?></span>
+                  <span class="td-link" ><?= l::get('read-more') ?></span>
                 </a>
               </p>
             </div>
