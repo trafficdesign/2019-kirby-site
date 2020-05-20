@@ -54,6 +54,30 @@
               </li>
             <?php endforeach ?>
           </ul>
+
+          <h2 class="PartnersTitle"><?= $page->partnersTitle()->html() ?></h2>
+          <ul class="Profiles">
+            <?php foreach($page->partners()->toStructure() as $partner): ?>
+              <li>
+                <div class="Profile Partner">
+                  <a href="<?= $partner->url()->html() ?>" target="_blank">
+                    <?php if($image = $partner->logo()->toFile()): ?>
+                      <figure class="ProfileThumb td-tile">
+                       <img src="<?= $image->thumb(
+                          array(
+                            'height' => 200,
+                            'crop' => false,
+                            'grayscale' => true,
+                            'quality' => 90
+                          ))->url() ?>" alt="<?= $partner->name()->html() ?>" />
+                    </figure>
+                    <?php endif ?>
+                  </a>
+                </div>
+              </li>
+            <?php endforeach ?>
+          </ul>
+
         </div>
       </div>
 

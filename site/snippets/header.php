@@ -45,6 +45,7 @@
     rel="canonical"
     href="<?= $page->url() ?>"
   />
+  <script async defer data-domain="trafficdesign.pl" src="https://plausible.io/js/plausible.js"></script>
 
 </head>
 <body>

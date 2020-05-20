@@ -3,7 +3,7 @@ title: O nas
 pages:
   template: member
 
-files: false
+files: true
 
 options:
   delete: false
@@ -32,3 +32,27 @@ fields:
   team:
     label: Team intro
     type: text
+
+  partnersTitle:
+    label: Partners intro
+    type: text
+
+  partners:
+    label: Partnerzy
+    type: structure
+    style: table
+    entry: >
+      {{name}}
+    fields:
+      name:
+        label: Nazwa
+        type: text
+        required: true
+      logo:
+        label: Logo
+        required: true
+        type: image
+      url:
+        label: Link
+        type: url
+        required: true

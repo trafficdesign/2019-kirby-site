@@ -67,7 +67,7 @@
 
 .TopbarBrandmark {
   img {
-    @include set-height-l;
+    @include set-height-m;
   }
   .TopbarHd & {
     @include bp("phone") {
