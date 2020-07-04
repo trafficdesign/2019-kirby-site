@@ -4,10 +4,10 @@
   <main class="Main fade-in" role="main">
     <div class="MainEl">
 
-      <header class="Heading">
-        <h1 class="HeadingTitle"><?= $page->title()->html() ?></h1>
+      <header class="td-heading">
+        <h1 class="td-heading-title"><?= $page->title()->html() ?></h1>
         <?php if($pagination->page() == 1):?>
-          <p class="HeadingSubtitle"><?= $page->text()->html() ?></p>
+          <p class="td-heading-subtitle"><?= $page->text()->html() ?></p>
         <?php endif ?>
       </header>
 

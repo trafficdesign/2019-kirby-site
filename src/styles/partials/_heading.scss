@@ -1,0 +1,33 @@
+.td-heading {
+  @include set-mvh;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: $mwidth-s;
+  text-align: center;
+  .td-heading-title {
+    @include set-type-h;
+    font-family: $brand-font;
+    font-weight: 600;
+  }
+  .td-heading-subtitle,
+  .td-heading-subtitle > p {
+    @include set-mvm;
+    @include set-type-l;
+    font-family: $brand-font;
+    color: $mono-color-500;
+    font-weight: 600;
+    display: block;
+  }
+  .td-heading-caps {
+    @include set-mts;
+    @include set-type-x;
+    color: $mono-color-400;
+    letter-spacing: $tracking-s;
+    text-transform: uppercase;
+  }
+  .td-heading-text {
+    @include set-mvm;
+    @include set-type-m;
+    display: block;
+  }
+}

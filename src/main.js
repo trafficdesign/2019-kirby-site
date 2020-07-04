@@ -1,6 +1,7 @@
-import lightgallery from "lightgallery.js";
 import MicroModal from "micromodal";
-import { throttle } from "lodash";
+import Splide from '@splidejs/splide';
+import lightgallery from "lightgallery.js";
+import { throttle, toPlainObject, forEach } from "lodash";
 
 require("./styles/main.scss");
 
@@ -67,8 +68,6 @@ var magic = () => {
       MODAL_OPEN.style.display = "inline-block";
     }
 
-    // console.log state
-    // console.log({ HAS_MENU }, { HAS_SCROLL }, { IS_HDESKTOP }, { IS_HOMEPAGE });
   };
 
   // global var magic
@@ -81,8 +80,29 @@ var magic = () => {
     cssEasing: "cubic-bezier(0.25, 0, 0.25, 1)",
     download: false,
     mode: "lg-fade",
-    speed: 500
+    speed: 500,
   });
+
+  // Splide galleries ('offer' template)
+  var elms = document.getElementsByClassName( 'splide' );
+  for ( var i = 0, len = elms.length; i < len; i++ ) {
+    new Splide( elms[ i ], {
+      arrows: false,
+      autoHeight: true,
+      autoplay: true,
+      drag: true,
+      interval: 5000,
+      keyboard: false,
+      lazyLoad: 'nearby',
+      pagination: false,
+      perMove: 1,
+      perPage: 1,
+      rewind: true,
+      speed: "1000",
+      type: 'loop',
+      width: '100%',
+    }).mount();
+  }
 
   // modal
   MODAL_OPEN.onclick = () => {

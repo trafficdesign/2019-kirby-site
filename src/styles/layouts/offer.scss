@@ -1,0 +1,110 @@
+.td-layout--offer {
+  margin-left: auto;
+  margin-right: auto;
+  .td-layout-body {
+  }
+  .td-section {
+    @include bp("tabletUp") {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      align-content: center;
+      &.td-section--odd {
+
+      }
+      &.td-section--even {
+        flex-direction: row-reverse;
+      }
+    }
+  }
+  .td-section-content {
+    @include bp("phone") {
+      @include set-mbl;
+    }
+    @include bp("tabletUp") {
+      flex: 0 0 (100/3 * 1%);
+    }
+    h2 {
+      @include set-mvn;
+      @include set-type-l;
+      font-family: $brand-font;
+      font-weight: 600;
+      @include bp("phone") {
+        text-align: center;
+      }
+    }
+    p {
+      @include set-mvm;
+      @include bp("phone") {
+        text-align: center;
+        @include set-mbl;
+      }
+    }
+    ul li {
+      @include set-type-x;
+      list-style: none;
+      list-style-position: inside;
+      span {
+        @include set-mrs;
+        color: $mono-color-400;
+      }
+    }
+  }
+  .td-section-aside {
+    @include bp("tabletUp") {
+      @include set-mhl;
+      flex: 0 0 (100/3 * 2%);
+    }
+    overflow: hidden;
+    position: relative;
+    text-align: center;
+    .splide__slide {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+    .splide__slide img {
+      display: inline;
+      width: 100%;
+    }
+  }
+  .td-section-cta {
+    @include set-mvh;
+    text-align: center;
+  }
+  .td-separator {
+    @include set-mvh;
+  }
+  .td-vocative {
+    @include set-pal;
+    background: $decor-color;
+    .td-heading-subtitle {
+      color: $mono-color-600;
+    }
+    .Button {
+      @include set-mtm;
+    }
+  }
+  .td-clients {
+    margin-left: auto;
+    margin-right: auto;
+    max-width: $mwidth-s;
+    h2 {
+      @include set-mvh;
+      @include set-type-l;
+      color: $mono-color-600;
+      display: block;
+      font-family: $brand-font;
+      font-weight: 600;
+      text-align: center;
+    }
+    .Partner {
+      position: relative;
+      text-align: center;
+      img {
+        display: inline-block;
+        max-width: 80%;
+      }
+    }
+  }
+}

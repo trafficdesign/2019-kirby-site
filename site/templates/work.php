@@ -6,10 +6,10 @@
 
       <article>
 
-        <header class="Heading">
-          <span class="HeadingIntro"><?= $page->parent()->title()->html() ?></span>
-          <h1 class="HeadingTitle"><?= $page->title()->html() ?></h1>
-          <p class="HeadingCaps"><?= date('d.m.Y', $page->date()) ?></p>
+        <header class="td-heading">
+          <span class="td-heading-text"><?= $page->parent()->title()->html() ?></span>
+          <h1 class="td-heading-title"><?= $page->title()->html() ?></h1>
+          <p class="td-heading-caps"><?= date('d.m.Y', $page->date()) ?></p>
         </header>
 
         <div class="WorkLayout">

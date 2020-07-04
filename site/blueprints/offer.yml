@@ -1,0 +1,226 @@
+title: Oferta
+
+files: true
+
+pages: false
+
+options:
+  delete: false
+  status: false
+  template: false
+  url: false
+
+fields:
+  title:
+    label: Tytuł
+    type: title
+  subtitle:
+    label: Podtytuł
+    type: textarea
+    buttons: false
+    size: small
+  text:
+    label: Tekst
+    type: text
+
+  buildings:
+    label: Na budynkach
+    type: headline
+  buildingstitle:
+    label: Tytuł
+    type: text
+    required: true
+  buildingstext:
+    label: Text
+    type: text
+    required: true
+  buildingsservices:
+    label: Karta dań
+    required: true
+    style: table
+    type: structure
+    entry: >
+      {{menuitem}}
+    fields:
+      menuitem:
+        label: Nazwa
+        type: text
+        required: true
+  buildingsphotos:
+    label: Galeria
+    limit: 5
+    required: false
+    style: table
+    translate: false
+    type: structure
+    fields:
+      image:
+        label: Obraz
+        type: image
+        translate: false
+        required: true
+  buildingscasestudy:
+    label: Case study
+    type: page
+    required: false
+
+  streets:
+    label: Na ulicy
+    type: headline
+  streetstitle:
+    label: Tytuł
+    type: text
+    required: true
+  streetstext:
+    label: Text
+    type: text
+    required: true
+  streetsservices:
+    label: Karta dań
+    required: true
+    style: table
+    type: structure
+    entry: >
+      {{menuitem}}
+    fields:
+      menuitem:
+        label: Nazwa
+        type: text
+        required: true
+  streetsphotos:
+    label: Galeria
+    limit: 5
+    required: false
+    style: table
+    translate: false
+    type: structure
+    fields:
+      image:
+        label: Obraz
+        type: image
+        translate: false
+        required: true
+  streetscasestudy:
+    label: Case study
+    type: page
+    required: false
+
+  workshops:
+    label: Doradztwo
+    type: headline
+  workshopstitle:
+    label: Tytuł
+    type: text
+    required: true
+  workshopstext:
+    label: Text
+    type: text
+    required: true
+  workshopsservices:
+    label: Karta dań
+    required: true
+    style: table
+    type: structure
+    entry: >
+      {{menuitem}}
+    fields:
+      menuitem:
+        label: Nazwa
+        type: text
+        required: true
+  workshopsphotos:
+    label: Galeria
+    limit: 5
+    required: false
+    style: table
+    translate: false
+    type: structure
+    fields:
+      image:
+        label: Obraz
+        type: image
+        translate: false
+        required: true
+  workshopscasestudy:
+    label: Case study
+    type: page
+    required: false
+
+  design:
+    label: Komunikacja marek, projektowanie graficzne
+    type: headline
+  designtitle:
+    label: Tytuł
+    type: text
+    required: true
+  designtext:
+    label: Text
+    type: text
+    required: true
+  designservices:
+    label: Karta dań
+    required: true
+    style: table
+    type: structure
+    entry: >
+      {{menuitem}}
+    fields:
+      menuitem:
+        label: Nazwa
+        type: text
+        required: true
+  designphotos:
+    label: Galeria
+    type: structure
+    style: table
+    required: false
+    limit: 5
+    translate: false
+    fields:
+      image:
+        label: Obraz
+        type: image
+        translate: false
+        required: true
+  designcasestudy:
+    label: Case study
+    type: page
+    required: false
+
+  cta:
+    label: Wołacz
+    type: headline
+  ctatitle:
+    type: text
+    label: Tytuł wołacza
+  ctatext:
+    type: text
+    label: Tekst wołacza
+
+  clients:
+    label: Klienci
+    type: headline
+  clientstitle:
+    label: Tytuł
+    type: text
+  clientslogos:
+    label: Klienci
+    type: structure
+    style: table
+    entry: >
+      {{name}}
+    fields:
+      name:
+        label: Nazwa
+        type: text
+        required: true
+      logo:
+        label: Logo
+        required: true
+        type: image
+        translate: false
+      url:
+        label: Link
+        type: url
+        required: true
+

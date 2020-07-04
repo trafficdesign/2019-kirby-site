@@ -4,9 +4,9 @@
   <main class="Main fade-in" role="main">
     <div class="MainEl">
 
-      <header class="Heading">
-        <h1 class="HeadingTitle"><?= $page->title()->html() ?></h1>
-        <p class="HeadingIntro"><?= $page->subtitle()->html() ?></p>
+      <header class="td-heading">
+        <h1 class="td-heading-title"><?= $page->title()->html() ?></h1>
+        <p class="td-heading-subtitle"><?= $page->subtitle()->html() ?></p>
       </header>
 
       <section class="ContactLayout">
@@ -15,7 +15,7 @@
             <a class="Button" href="mailto:<?= $page->email()->html() ?>"
             ><?= $page->email()->html() ?></a>
           </div>
-          <hr class="Separator" />
+          <hr class="td-separator" />
           <div class="ContactBits">
             <ul>
               <li>
