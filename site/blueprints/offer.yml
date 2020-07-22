@@ -6,7 +6,7 @@ pages: false
 
 options:
   delete: false
-  status: false
+  status: true
   template: false
   url: false
 
