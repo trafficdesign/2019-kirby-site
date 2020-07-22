@@ -35,8 +35,8 @@
                     <li class="splide__slide">
                       <img src="<?= $buildingsphoto->image->toFile()->thumb(
                       array(
-                        'height' => 400,
-                        'quality' => 90,
+                        'height' => 600,
+                        'quality' => 95,
                       ))->url() ?>" />
                     </li>
                     <?php endforeach ?>
@@ -72,8 +72,8 @@
                     <li class="splide__slide">
                       <img src="<?= $streetsphoto->image->toFile()->thumb(
                       array(
-                        'height' => 400,
-                        'quality' => 90,
+                        'height' => 600,
+                        'quality' => 95,
                       ))->url() ?>" />
                     </li>
                     <?php endforeach ?>
@@ -109,8 +109,8 @@
                     <li class="splide__slide">
                       <img src="<?= $workshopsphoto->image->toFile()->thumb(
                       array(
-                        'height' => 400,
-                        'quality' => 90,
+                        'height' => 600,
+                        'quality' => 95,
                       ))->url() ?>" />
                     </li>
                     <?php endforeach ?>
@@ -146,8 +146,8 @@
                     <li class="splide__slide">
                       <img src="<?= $designphoto->image->toFile()->thumb(
                       array(
-                        'height' => 400,
-                        'quality' => 90,
+                        'height' => 600,
+                        'quality' => 95,
                       ))->url() ?>" />
                     </li>
                     <?php endforeach ?>
@@ -192,7 +192,7 @@
                               'height' => 200,
                               'crop' => false,
                               'grayscale' => true,
-                              'quality' => 90
+                              'quality' => 95
                             ))->url() ?>" alt="<?= $client->name()->html() ?>" />
                       </figure>
                       <?php endif ?>
