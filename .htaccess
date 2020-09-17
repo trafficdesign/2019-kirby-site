@@ -59,4 +59,5 @@ RewriteRule ^(.*) index.php [L]
 # php_flag short_open_tag on
 
 # 301 Redirect Entire Directory
-RedirectMatch 301 /pl(.*) //$1
+# RedirectMatch 301 /pl/(.*) //$1
+Redirect 301 /pl /
