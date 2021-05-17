@@ -16,9 +16,9 @@
             $url = $item->url();
             $image = $item->coverimage()->toFile()->thumb(array(
               'crop' => true,
-              'height' => 340,
+              'height' => 450,
               'quality' => 95,
-              'width' => 500,
+              'width' => 600,
             ));
             $caption = $item->title()->html();
             ?>

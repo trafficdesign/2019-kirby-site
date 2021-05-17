@@ -36,6 +36,7 @@
                       <img src="<?= $buildingsphoto->image->toFile()->thumb(
                       array(
                         'height' => 600,
+                        'width' => 800,
                         'quality' => 95,
                       ))->url() ?>" />
                     </li>
@@ -73,6 +74,7 @@
                       <img src="<?= $streetsphoto->image->toFile()->thumb(
                       array(
                         'height' => 600,
+                        'width' => 800,
                         'quality' => 95,
                       ))->url() ?>" />
                     </li>
@@ -110,6 +112,7 @@
                       <img src="<?= $workshopsphoto->image->toFile()->thumb(
                       array(
                         'height' => 600,
+                        'width' => 800,
                         'quality' => 95,
                       ))->url() ?>" />
                     </li>
@@ -147,6 +150,7 @@
                       <img src="<?= $designphoto->image->toFile()->thumb(
                       array(
                         'height' => 600,
+                        'width' => 800,
                         'quality' => 95,
                       ))->url() ?>" />
                     </li>
