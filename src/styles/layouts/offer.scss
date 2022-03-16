@@ -1,17 +1,14 @@
+@use "sass:math";
+
 .td-layout--offer {
   margin-left: auto;
   margin-right: auto;
-  .td-layout-body {
-  }
   .td-section {
     @include bp("tabletUp") {
       display: flex;
       flex-direction: row;
       align-items: center;
       align-content: center;
-      &.td-section--odd {
-
-      }
       &.td-section--even {
         flex-direction: row-reverse;
       }
@@ -22,7 +19,9 @@
       @include set-mbl;
     }
     @include bp("tabletUp") {
-      flex: 0 0 (100/3 * 1%);
+      flex-grow: 0;
+      flex-shrink: 0;
+      flex-basis: math.div(100, 3) * 1%;
     }
     h2 {
       @include set-mvn;
@@ -53,7 +52,9 @@
   .td-section-aside {
     @include bp("tabletUp") {
       @include set-mhl;
-      flex: 0 0 (100/3 * 2%);
+      flex-grow: 0;
+      flex-shrink: 0;
+      flex-basis: math.div(100, 3) * 2%;
     }
     overflow: hidden;
     position: relative;
