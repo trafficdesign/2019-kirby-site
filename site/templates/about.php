@@ -36,7 +36,6 @@
                             'width' => 400,
                             'height' => 400,
                             'crop' => true,
-                            'grayscale' => true,
                             'quality' => 90
                           ))]) ?>
                         </div>

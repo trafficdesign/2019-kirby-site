@@ -30,6 +30,9 @@
       max-width: 80%;
     }
   }
+  .td-tile__cover-overlay {
+    display: none;
+  }
   .td-separator {
     @include set-mvh;
   }
