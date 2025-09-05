@@ -783,7 +783,7 @@ body:not(.lg-from-hash)
 }
 
 .group {
-  *zoom: 1;
+  zoom: 1;
 }
 
 .group:before,

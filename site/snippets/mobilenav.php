@@ -11,9 +11,9 @@
             <a href="<?= $item->url() ?>" class="td-link<?= r($item->isOpen(), ' is-active') ?>"><?= $item->title()->html() ?></a>
           </li>
           <?php endforeach ?>
-          <li class="MobileMenuItem">
+          <!-- <li class="MobileMenuItem">
             <a class="td-link" href="http://trafficdesign.shoplo.com/" target="_blank"><?= l::get('nav-linkto-shop') ?></a>
-          </li>
+          </li> -->
           <li class="MobileMenuItem">
             <a class="td-link" href="https://trafficdesign.prowly.com/" target="_blank"><?= l::get('nav-linkto-media') ?></a>
           </li>

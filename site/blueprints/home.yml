@@ -29,9 +29,14 @@ fields:
     type: text
     required: true
 
-  workcta:
-    label: Wołacz realizacji
+  primaryCtaLabel:
+    label: Tekst przycisku
     type: text
+    required: true
+
+  primaryCtaUrl:
+    label: URL przycisku
+    type: url
     required: true
 
   newscta:

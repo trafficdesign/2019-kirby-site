@@ -33,8 +33,19 @@
     }
   }
   .FooterPartners {
+    display: inline-flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1.5em;
+    img,
     a {
       display: inline-block;
+    }
+    img {
+      @include bp("phone") {
+        text-align: center;
+      }
     }
   }
   .FooterName {
@@ -57,7 +68,8 @@
       @include set-mrn;
     }
   }
-  .Brandmark {
+  .Brandmark,
+  .Logo {
     @include set-height-m;
   }
 }

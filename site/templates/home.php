@@ -9,7 +9,7 @@
         <h1><?= $page->heading()->text() ?></h1>
         <p><?= $page->text()->text() ?></p>
         <div class="Actionbar">
-          <a href="<?php echo $pages->find('realizacje')->url() ?>" class="Button"><?= $page->workcta()->text() ?></a>
+          <a href="<?= $page->primaryCtaUrl()->text() ?>" class="Button"><?= $page->primaryCtaLabel()->text() ?></a>
           <a href="<?php echo $pages->find('aktualnosci')->url() ?>" class="td-link"><?= $page->newscta()->text() ?></a>
         </div>
       </div>

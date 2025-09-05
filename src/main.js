@@ -1,5 +1,5 @@
 import MicroModal from "micromodal";
-import Splide from '@splidejs/splide';
+import Splide from "@splidejs/splide";
 import lightgallery from "lightgallery.js";
 import { throttle, toPlainObject, forEach } from "lodash";
 
@@ -67,7 +67,6 @@ var magic = () => {
       MODAL_CLOSE.style.display = "none";
       MODAL_OPEN.style.display = "inline-block";
     }
-
   };
 
   // global var magic
@@ -84,40 +83,40 @@ var magic = () => {
   });
 
   // Splide galleries ('offer' template)
-  var elms = document.getElementsByClassName( 'splide' );
-  for ( var i = 0, len = elms.length; i < len; i++ ) {
-    new Splide( elms[ i ], {
+  var elms = document.getElementsByClassName("splide");
+  for (var i = 0, len = elms.length; i < len; i++) {
+    new Splide(elms[i], {
       arrows: false,
       autoHeight: true,
       autoplay: true,
       drag: true,
       interval: 3000,
       keyboard: false,
-      lazyLoad: 'nearby',
+      lazyLoad: "nearby",
       pagination: false,
       perMove: 1,
       perPage: 1,
       rewind: true,
       speed: "500",
-      type: 'loop',
-      width: '100%',
+      type: "loop",
+      width: "100%",
     }).mount();
   }
 
   // modal
   MODAL_OPEN.onclick = () => {
     MicroModal.show("mobileMenu", {
-      onShow: modal => {
+      onShow: (modal) => {
         HAS_MENU = true;
         doTheMagic();
       },
-      onClose: modal => {
+      onClose: (modal) => {
         HAS_MENU = false;
         doTheMagic();
       },
       disableScroll: true,
       disableFocus: true,
-      debugMode: false
+      debugMode: false,
     });
   };
   MODAL_CLOSE.onclick = () => {
@@ -138,20 +137,3 @@ function ready(fn) {
 }
 
 ready(magic);
-
-// unregister service worker as per https://stackoverflow.com/questions/49740931/unregistering-removing-a-service-worker
-
-self.addEventListener("install", function(e) {
-  self.skipWaiting();
-});
-
-self.addEventListener("activate", function(e) {
-  self.registration
-    .unregister()
-    .then(function() {
-      return self.clients.matchAll();
-    })
-    .then(function(clients) {
-      clients.forEach(client => client.navigate(client.url));
-    });
-});
