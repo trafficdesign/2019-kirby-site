@@ -23,3 +23,8 @@ fields:
   name:
     label: Nazwa w stopce
     type: text
+
+  funding:
+    label: Stopka dofinansowania
+    type: textarea
+    buttons: false
