@@ -10,14 +10,14 @@
     "build": "parcel build src/main.js --dist-dir assets/bundle --public-url ./"
   },
   "devDependencies": {
-    "@parcel/transformer-sass": "2.15.4",
+    "@parcel/transformer-sass": "2.16.0",
     "eslint": "6.8.0",
     "eslint-config-airbnb": "18.2.1",
     "eslint-config-prettier": "6.15.0",
     "eslint-plugin-import": "2.25.4",
     "eslint-plugin-jsx-a11y": "6.5.1",
     "eslint-plugin-react": "7.29.4",
-    "parcel": "^2.8.3",
+    "parcel": "2.16.0",
     "prettier": "1.19.1",
     "prettier-eslint": "9.0.2",
     "sass": "1.49.9"
