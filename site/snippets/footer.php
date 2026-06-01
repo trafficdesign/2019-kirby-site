@@ -41,7 +41,6 @@
     <img width="64px" src="/assets/images/polska.png" alt="Polska" />
     <img width="180px" src="/assets/images/mkidn.png" alt="Ministerstwo Kultury i Dziedzictwa Narodowego" />
     <img width="180px" src="/assets/images/ipk.png" alt="Instytut Przemysłów Kreatywnych" />
-    <img width="64px" src="/assets/images/crpk.png" alt="Centrum Rozwoju Przemysłów Kreatywnych" />
   </div>
 </footer>
 <div class="Footer">
